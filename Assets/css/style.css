@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:wght@500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap");
 /*========== Font and typography ==========*/
 :root {
-  --body-font: "Spartan", sans-serif;
+  --body-font: "Poppins", sans-serif;
   --h1-font-size: 3rem;
   --h1-font-height: 4rem;
   --h2-font-size: 2.875rem;
@@ -59,7 +58,7 @@ body {
   width: 100%;
 }
 
-/* Header Start */
+/*=============== Navbar & Header ===============*/
 .header {
   display: flex;
   align-items: center;
@@ -67,10 +66,14 @@ body {
   padding: 1.25rem 5rem;
   background: #e3e6f3;
   box-shadow: 0 0.313rem 0.938 rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .header a img {
-  max-height: 50px;
+  max-height: 75px;
   width: auto;
   object-fit: cover;
 }
@@ -109,4 +112,114 @@ body {
   position: absolute;
   bottom: -0.25rem;
   left: 1.25rem;
+}
+
+/*=============== Home Section ===============*/
+.home__section {
+  background-image: url("../img/hero4.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.home__section h4 {
+  padding-bottom: 0.938rem;
+}
+
+.home__section h1 {
+  color: #088178;
+}
+
+.home__section button {
+  background-image: url(../img/button.png);
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 0.875rem 5rem 0.875rem 4.063rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.938rem;
+}
+
+.home__section p {
+  font-weight: 200;
+  color: black;
+}
+
+/*=============== Features Section ===============*/
+.section-p1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-p1 .flx__box {
+  width: 11.25rem;
+  text-align: center;
+  padding: 1.563rem 0.938rem;
+  box-shadow: 1.25rem 1.25rem 2.125rem rgba(0, 0, 0, 0.03);
+  border: 0.063rem solid #cce7d0;
+  border-radius: 0.25rem;
+  margin: 0.938rem 0;
+}
+
+.section-p1 .flx__box:hover {
+  box-shadow: 0.625rem 0.625rem 3.375rem rgba(70, 62, 221, 0.1);
+}
+
+.section-p1 .flx__box img {
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+
+.section-p1 .flx__box h6 {
+  display: inline-block;
+  padding: 0.563rem 0.5rem 0.375rem 0.5rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  color: #088178;
+  background-color: #fddde4;
+}
+
+.section-p1 .flx__box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+.section-p1 .flx__box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+.section-p1 .flx__box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+.section-p1 .flx__box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+.section-p1 .flx__box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+
+/*=============== Product Section ===============*/
+.product__front {
+  text-align: center;
+}
+
+.product__front .section__products {
+  text-align: center;
+  width: 23%;
+  min-width: 15.625rem;
+  padding: 0.625rem 0.75rem;
+  border: 0.063rem solid #cce7d0;
+  border-radius: 1.563rem;
+}
+
+.product__front .section__products img {
+  width: 100%;
+  border-radius: 1.25rem;
 }
